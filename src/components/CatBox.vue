@@ -7,7 +7,7 @@ import { ref } from 'vue';
 
 const isLoading = ref(false)
 const imgSrc = ref('')
-const defaultImg = 'src/assets/img/kids.jpeg'
+const defaultImg = '/src/assets/img/kids.jpeg'
 let err = ref(null)
 
 
