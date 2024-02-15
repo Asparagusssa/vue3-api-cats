@@ -34,11 +34,11 @@ async function fetchPic() {
 
 <template>
     <main :class="{load: toggle}" class="catWrap">
-      <p v-if="toggle">Is loading...</p>
+      <p v-if="toggle">Загружается...<p>
       <p v-else-if="err">Ошибка: {{ err }}</p>
       <img class="catBox" v-else :src="imgSrc || defaultImg" alt="cat">
     </main>
-    <button @click="fetchPic" :disabled="isLoading">Create Cat</button>
+    <button @click="fetchPic" :disabled="isLoading">Призвать котика</button>
 
 </template>
 
